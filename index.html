@@ -32,6 +32,15 @@
     </header>
     <div class="container">
       <!-- Timeblocks go here -->
+      <form>
+        <div class="form-group border d-flex">
+          <label for="inputText">9.00 AM</label>
+          <input type="text" class="form-control" id="inputTaskText">
+          <button type="submit" class="btn btn-warning">Edite</button>
+          <button type="submit" class="btn btn-danger">Delite</button>
+          <button type="submit" onclick="saveInput()" class="btn btn-primary">Save</button>
+        </div>                 
+      </form>
     </div>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
