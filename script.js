@@ -34,8 +34,13 @@ $(document).ready (function () {
     $("*[data-content]").each(function () {
       $(this).val(localStorage.getItem("item-" + $(this).attr("data-content")));
     });
-
-    $("*[data-content]").on("keyup", function (itm) {
-      localStorage.setItem ("item-" + $(this).attr("data-content"), $(this).val());
+    
+    $(".saveBtn").on("click", function () {
+      localStorage.setItem ("item-" 
+      + $(this).siblings("textarea").attr("data-content"), 
+      $(this).siblings("textarea").val());
     })
-  })
+});
+
+
+
